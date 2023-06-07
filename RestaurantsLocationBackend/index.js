@@ -15,6 +15,7 @@ app.get('/', (req, res) => {
   res.send('Hello, Express!');
 });
 app.use(bodyParser.json());
+app.use(cors());
 
 // Start the server
 const port = 3010;
@@ -38,23 +39,6 @@ pool.connect((err, client, done) => {
   }
   done();
 });
-
-// app.post('/create', (req, res) => {
-//     const { name, email } = req.body;
-//     const query = 'INSERT INTO users (name, email) VALUES ($1, $2)';
-
-//     pool.query(query, [name, email], (err, result) => {
-//       if (err) {
-//         console.error('Error inserting data:', err);
-//         res.status(500).send('Error inserting data');
-//       } else {
-//         console.log('Data inserted successfully');
-//         res.status(200).send('Data inserted successfully');
-//       }
-//     });
-//   });
-app.use(cors());
-
 
 
 app.post('/searchRestaurants', async (req, res) => {
