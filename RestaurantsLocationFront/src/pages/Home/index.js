@@ -57,5 +57,3 @@ export default function Home() {
         </div>
     )
 }
-//17 Rothschild Boulevard, Tel Aviv, Israel
-//Derech Yitzhak Rabin, Jerusalem, Israel
