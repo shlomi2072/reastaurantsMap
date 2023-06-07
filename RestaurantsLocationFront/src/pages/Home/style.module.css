@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(82, 193, 193);
+  overflow: auto;
+}
+
+.divClassName h1 {
+  margin: 0;
+}
